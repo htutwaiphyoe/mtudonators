@@ -1,0 +1,17 @@
+@import "../../../sass/abstracts/variables";
+@import "../../../sass/abstracts/mixins";
+
+.NavigationItem {
+    @include center;
+    &__Link {
+        & span {
+            font-size: 1.5rem;
+        }
+        font-size: 2rem;
+        font-weight: 400;
+        text-decoration: none;
+        @include center;
+        flex-flow: column;
+        color: $color-foreground;
+    }
+}
