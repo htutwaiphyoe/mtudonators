@@ -2,7 +2,7 @@
 @import "../../../sass/abstracts/mixins";
 
 .Logo {
-    position: absolute;
+    position: fixed;
     bottom: 5%;
     z-index: 2;
     background-color: $color-white;
@@ -17,6 +17,11 @@
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
+
+    @include responsive(479, 0) {
+        width: 5.5rem;
+        bottom: 6.5%;
+    }
     &__Image {
         width: 100%;
     }

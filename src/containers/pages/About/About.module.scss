@@ -1,0 +1,24 @@
+@import "../../../sass/abstracts/mixins";
+@import "../../../sass/abstracts/variables";
+
+.About {
+    max-width: 70rem;
+    margin: 0 auto;
+    @include center;
+    flex-direction: column;
+
+    padding: 3rem 0;
+    &__Figure {
+        width: 12rem;
+
+        &__Image {
+            width: 100%;
+            @include rounded(10rem);
+        }
+    }
+
+    &__Caption {
+        font-size: 2rem;
+        color: $color-foreground;
+    }
+}

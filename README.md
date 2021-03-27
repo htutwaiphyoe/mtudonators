@@ -1,3 +1,3 @@
 # MTU CDM Donators
 
-    Honour Website for donators
+    Honour Website for donors
