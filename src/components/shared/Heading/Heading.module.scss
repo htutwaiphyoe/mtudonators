@@ -1,0 +1,18 @@
+@import "../../../sass/abstracts/variables";
+.Heading {
+    font-size: 3rem;
+    margin: 1rem 0;
+    color: rgba($color-black, 0.8);
+    text-transform: uppercase;
+    position: relative;
+    &::after {
+        content: "";
+        width: 50%;
+        display: block;
+        height: 0.3rem;
+        position: absolute;
+        bottom: -5%;
+        background-color: rgba($color-primary, 0.7);
+        left: 25%;
+    }
+}

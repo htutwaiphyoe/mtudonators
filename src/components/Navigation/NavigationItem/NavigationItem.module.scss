@@ -22,6 +22,7 @@
         color: $color-foreground;
         width: 15rem;
         height: 80%;
+        outline: none;
         @include responsive(767, 0) {
             width: 100%;
             height: 100%;

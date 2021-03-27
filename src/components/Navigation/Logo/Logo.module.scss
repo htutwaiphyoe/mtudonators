@@ -3,7 +3,7 @@
 
 .Logo {
     position: fixed;
-    bottom: 5%;
+
     z-index: 2;
     background-color: $color-white;
     box-shadow: $shadow;
@@ -11,6 +11,7 @@
     padding: 1rem;
     width: 7rem;
     border-radius: 100%;
+    bottom: 4rem;
     @include center;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -19,8 +20,8 @@
     -o-transform: translateX(-50%);
 
     @include responsive(479, 0) {
-        width: 5.5rem;
-        bottom: 6.5%;
+        width: 5.4rem;
+        bottom: 4.8rem;
     }
     &__Image {
         width: 100%;

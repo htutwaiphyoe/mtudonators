@@ -1,24 +1,56 @@
 @import "../../../sass/abstracts/mixins";
 @import "../../../sass/abstracts/variables";
+@import "../../../sass/bases/animation";
 
 .About {
     max-width: 70rem;
     margin: 0 auto;
     @include center;
     flex-direction: column;
-
-    padding: 3rem 0;
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 11rem;
+    animation: fadeIn 1s ease;
+    -webkit-animation: fadeIn 1s ease;
     &__Figure {
         width: 12rem;
 
         &__Image {
             width: 100%;
             @include rounded(10rem);
+            box-shadow: $shadow;
         }
     }
 
-    &__Caption {
-        font-size: 2rem;
-        color: $color-foreground;
+    &__Paragraph {
+        font-size: 1.5rem;
+
+        color: rgba($color-black, 0.6);
+        padding: 0 2rem;
+    }
+
+    &__List {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @include responsive(767, 0) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include responsive(479, 0) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        gap: 1.5rem;
+
+        &__Item {
+            padding: 2rem 0;
+
+            box-shadow: $shadow;
+            @include rounded(1rem);
+        }
+
+        & ion-icon {
+            font-size: 5rem;
+            color: rgba($color-black, 0.8);
+        }
     }
 }
