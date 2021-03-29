@@ -1,7 +1,12 @@
+import { useEffect } from "react";
+
 import icon from "../../../assets/imgs/contact.svg";
 import Heading from "../../../components/shared/Heading/Heading";
 import classes from "./Contact.module.scss";
 const Contact = (props) => {
+    useEffect(() => {
+        document.title = "Contact | MTU CDM Support";
+    }, []);
     return (
         <section className={classes.Contact}>
             <div className={classes.Contact__Container}>

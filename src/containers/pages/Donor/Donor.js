@@ -1,6 +1,11 @@
+import { useEffect } from "react";
+
 import Table from "../../../components/Table/Table";
 import classes from "./Donor.module.scss";
 const Donor = (props) => {
+    useEffect(() => {
+        document.title = "Donation | MTU CDM Support";
+    }, []);
     return (
         <section className={classes.Donor}>
             <div className={classes.Donor__Container}>

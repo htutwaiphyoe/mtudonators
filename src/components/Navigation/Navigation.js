@@ -7,7 +7,7 @@ const Navigation = (props) => {
     const items = useRef([
         { url: "/", icon: "home-sharp", text: "Home" },
         { url: "/about", icon: "information-circle-sharp", text: "About" },
-        { url: "/donors", icon: "people-sharp", text: "Donors" },
+        { url: "/donation", icon: "people-sharp", text: "Donation" },
         { url: "/contact", icon: "call-sharp", text: "Contact" },
     ]);
     return (

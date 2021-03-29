@@ -11,7 +11,7 @@
     margin-bottom: 11rem;
     @include fadeIn;
     &__Figure {
-        width: 12rem;
+        width: 15rem;
 
         &__Image {
             width: 100%;
@@ -22,7 +22,7 @@
 
     &__Paragraph {
         font-size: 1.5rem;
-
+        line-height: 1.8;
         color: $color-muted;
         padding: 0 2rem;
     }
@@ -48,7 +48,8 @@
 
         & ion-icon {
             font-size: 5rem;
-            color: rgba($color-black, 0.8);
+            color: $color-primary;
+            // color: rgba($color-black, 0.8);
         }
     }
 }

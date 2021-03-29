@@ -71,6 +71,9 @@ const Home = (props) => {
             clearTimeout(timer2);
         };
     }, [percentage]);
+    useEffect(() => {
+        document.title = "Home | MTU CDM Support";
+    }, []);
     return (
         <section className={classes.Home}>
             <div className={classes.Home__Total}>
