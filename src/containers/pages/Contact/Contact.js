@@ -27,7 +27,7 @@ const Contact = (props) => {
                         className={`${classes.Contact__List__Item} ${classes.Contact__List__Item_1}`}
                     >
                         <a
-                            href="https://www.facebook.com/mtustudentunion"
+                            href="https://m.facebook.com/mtustudentunion"
                             className={` ${classes.Contact__List__Item_1}`}
                         >
                             <i className="fab fa-facebook"></i>
@@ -43,8 +43,7 @@ const Contact = (props) => {
                     </li>
                 </ul>
                 <p className={classes.Contact__Footer}>
-                    Copyright &copy; 2021 | MTU Students' Union <br />
-                    Developed with 🧡
+                    Copyright &copy; 2021 | MTU Students' Union
                 </p>
             </div>
             <form className={classes.Contact__Form}>

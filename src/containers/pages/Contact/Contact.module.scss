@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    @include fadeIn;
     @include responsive(767, 0) {
         height: auto;
         grid-template-columns: 1fr;
