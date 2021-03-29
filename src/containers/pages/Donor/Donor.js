@@ -1,12 +1,12 @@
-import Heading from "../../../components/shared/Heading/Heading";
+import Table from "../../../components/Table/Table";
 import classes from "./Donor.module.scss";
 const Donor = (props) => {
     return (
         <section className={classes.Donor}>
             <div className={classes.Donor__Container}>
                 <p className={classes.Donor__Title}>
-                    CDM သမားများ ဆက်လက်ရပ်တည်နိုင်ရန်အတွက် လှူဒါန်းမည်ဆိုပါက MTU Student's Union ၏
-                    Page Messanger ကနေတစ်ဆင့် ဆက်သွယ်မေးမြန်းလှူဒါန်းနိုင်ပါသည်။
+                    CDM သမားများ ဆက်လက်ရပ်တည်နိုင်ရန်အတွက် ထောက်ပံ့လိုပါက MTU Student's Union ၏ Page
+                    Messanger ကနေတစ်ဆင့် ဆက်သွယ်မေးမြန်းလှူဒါန်းနိုင်ပါသည်။
                 </p>
                 <a href="http://m.me/mtustudentunion" className={classes.Donor__Btn}>
                     Donate now
@@ -84,6 +84,12 @@ const Donor = (props) => {
                         <figcaption className={classes.Donor__Label}>AYA Bank</figcaption>
                     </figure>
                 </div>
+            </div>
+            <div className={classes.Donor__Container}>
+                <p className={classes.Donor__Label}>
+                    ပါဝင်လှူဒါန်းကြသူ တစ်ဦးချင်းဆီကို SU မှ ကျေးဇူးတင်ဂုဏ်ပြုပါသည်။
+                </p>
+                <Table />
             </div>
         </section>
     );

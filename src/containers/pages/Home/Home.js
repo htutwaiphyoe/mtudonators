@@ -34,12 +34,12 @@ const charts = {
             data: [
                 "3405000",
                 "1467000",
-                "548550",
-                "1104000",
-                "1190612",
+                "1883000",
+                "1469200",
                 "1118800",
-                "1361000",
-                "1601000",
+                "1445612",
+                "1222000",
+                "842550",
                 "2916000",
             ],
             label: "‌ငွေပမာဏ",
@@ -49,8 +49,8 @@ const charts = {
         },
     ],
     doughnut: {
-        labels: ["total", "supported", "balance"],
-        data: ["15460162", "12200000", "3260162"],
+        labels: ["စုစုပေါင်း", "ထောက်ပံ့ပြီး", "လက်ကျန်ငွေ"],
+        data: ["15769162", "1200000", `${15769162 - 1200000}`],
         title: "ငွေရှင်းတမ်း",
         bg: ["#9d0208", "#36A2EB", "#FFCD56"],
         type: "doughnut",
@@ -62,7 +62,7 @@ const Home = (props) => {
 
     useEffect(() => {
         let timer2;
-        if (percentage < (12200000 / 15460162) * 100) {
+        if (percentage < (1200000 / 15769162) * 100) {
             timer2 = setTimeout(() => {
                 setPercentage((prevState) => prevState + 1);
             }, 100);
@@ -74,7 +74,7 @@ const Home = (props) => {
     return (
         <section className={classes.Home}>
             <div className={classes.Home__Total}>
-                <p className={classes.Home__Total__Heading}>K15,460,162+</p>
+                <p className={classes.Home__Total__Heading}>K15,769,162</p>
                 <span className={classes.Home__Total__Label}>{`ရရှိထားပြီးဖြစ်သည်`}</span>
             </div>
             <div className={classes.Home__Container}>
