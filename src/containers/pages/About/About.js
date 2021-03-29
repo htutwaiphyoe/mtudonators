@@ -1,7 +1,6 @@
 import { useRef } from "react";
 
 import Heading from "../../../components/shared/Heading/Heading";
-import logo from "../../../assets/imgs/sulogo.jpg";
 import classes from "./About.module.scss";
 const About = (props) => {
     const items = useRef([

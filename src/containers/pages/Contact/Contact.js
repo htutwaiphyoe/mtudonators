@@ -1,4 +1,5 @@
-import icon from "../../../assets/imgs/contact2.svg";
+import icon from "../../../assets/imgs/contact.svg";
+import Heading from "../../../components/shared/Heading/Heading";
 import classes from "./Contact.module.scss";
 const Contact = (props) => {
     return (
@@ -37,9 +38,41 @@ const Contact = (props) => {
                     </li>
                 </ul>
                 <p className={classes.Contact__Footer}>
-                    Copyright &copy; 2021 | MTU Students' Union
+                    Copyright &copy; 2021 | MTU Students' Union <br />
+                    Developed with 🧡
                 </p>
             </div>
+            <form className={classes.Contact__Form}>
+                <Heading text="Get in touch with us" />
+                <input
+                    type="text"
+                    className={classes.Contact__Form__Input}
+                    required
+                    placeholder="Name"
+                />
+                <input
+                    type="email"
+                    className={classes.Contact__Form__Input}
+                    required
+                    placeholder="Email"
+                />
+                <select name="" id="" className={classes.Contact__Form__Input}>
+                    <option value=""> - Select - </option>
+                    <option value="">Feedback</option>
+                    <option value="">Be a part of us</option>
+                    <option value="">Report bugs or errors</option>
+                </select>
+                <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    className={classes.Contact__Form__Input}
+                    required
+                    placeholder="Message"
+                ></textarea>
+                <button className={classes.Contact__Btn}>Send form</button>
+            </form>
         </section>
     );
 };
