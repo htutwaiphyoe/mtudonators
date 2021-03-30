@@ -19,8 +19,8 @@ const Contact = (props) => {
                 </figure>
 
                 <p className={classes.Contact__Paragraph}>
-                    CDM ထောက်ပံ့ရေးနှင့်ပတ်သတ်၍ အသေးစိတ်သိရှိလို၍ဖြစ်စေ၊ မေးမြန်းချင်လို၍ဖြစ်စေ SU
-                    ထံသို့ အောက်ဖော်ပြပါနည်းလမ်းများနှင့် ဆက်သွယ်နိုင်ပါသည်။
+                    CDM ထောက်ပံ့ရေးနှင့်ပတ်သတ်၍ အသေးစိတ်သိရှိလို၍ဖြစ်စေ၊ မေးမြန်းချင်လို၍ဖြစ်စေ MTU
+                    CDM Support Team ထံသို့ အောက်ဖော်ပြပါနည်းလမ်းများနှင့် ဆက်သွယ်နိုင်ပါသည်။
                 </p>
                 <ul className={classes.Contact__List}>
                     <li
@@ -43,7 +43,8 @@ const Contact = (props) => {
                     </li>
                 </ul>
                 <p className={classes.Contact__Footer}>
-                    Copyright &copy; 2021 | MTU Students' Union
+                    Copyright &copy; 2021 | MTU Students' Union <br />
+                    Terms & Conditions
                 </p>
             </div>
             <form className={classes.Contact__Form}>

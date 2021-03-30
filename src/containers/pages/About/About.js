@@ -37,11 +37,14 @@ const About = (props) => {
                 အတင်းအဓမ္မသိမ်းယူခဲ့သည်။ ထိုအချိန်မှစ၍ နိုင်ငံတစ်ဝှမ်း အစိုးရဝန်ထမ်းများသည် Civil
                 Disobedience Movement ဟုခေါ်သော အာဏာဖီဆန်ခြင်း လှုပ်ရှားမှု၌ ပါဝင်လာကြသည်။
                 ထိုကဲ့သို့ ပြည်သူ့ဘက်မှ ရပ်တည်သော ဝန်ထမ်းများကို တစ်ဖက်တစ်လှမ်းမှကူညီလျက်ရှိကြသည်။
-                MTUSU သည် MTU ရှိ CDM ပါဝင်သော ဝန်ထမ်းများကို ထောက်ပံ့ရန် ဆုံးဖြတ်ခဲ့ကြသည်။
+                MTUSU သည် MTU ရှိ CDM ပါဝင်သော ဝန်ထမ်းများကို ထောက်ပံ့ရန် MTU
+                CDM Support team အားဖွဲ့စည်းပြီး အလှူငွေများလက်ခံလျက်ရှိပါသည်။
             </p>
 
             <Heading text="strategies" />
-            <p className={classes.About__Paragraph}>MTUSU လုပ်ဆောင်နေသည့် အစီအစဉ်များ</p>
+            <p className={classes.About__Paragraph}>
+                MTU CDM Support Teamမှ လုပ်ဆောင်နေသည့် အစီအစဉ်များ
+            </p>
             <div className={classes.About__List}>
                 {items.current.map((item, i) => (
                     <div className={classes.About__List__Item} key={i}>

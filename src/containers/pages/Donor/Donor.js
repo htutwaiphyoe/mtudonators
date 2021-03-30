@@ -92,7 +92,7 @@ const Donor = (props) => {
             </div>
             <div className={classes.Donor__Container}>
                 <p className={classes.Donor__Label}>
-                    ပါဝင်လှူဒါန်းကြသူ တစ်ဦးချင်းဆီကို SU မှ ကျေးဇူးတင်ဂုဏ်ပြုပါသည်။
+                    ပါဝင်လှူဒါန်းကြသူ တစ်ဦးချင်းဆီကို CDM Support Team မှ ကျေးဇူးတင်ဂုဏ်ပြုပါသည်။
                 </p>
                 <Table />
             </div>
