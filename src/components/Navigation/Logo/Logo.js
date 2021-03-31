@@ -1,4 +1,3 @@
-import logo from "../../../assets/imgs/logo192.png";
 import classes from "./Logo.module.scss";
 const Logo = (props) => {
     return (

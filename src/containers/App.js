@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import Home from "./pages/Home/Home";
 const About = React.lazy(() => import("./pages/About/About"));
-const Donor = React.lazy(() => import("./pages/Donor/Donor"));
+const Donation = React.lazy(() => import("./pages/Donation/Donation"));
 const Contact = React.lazy(() => import("./pages/Contact/Contact"));
 const App = () => {
     return (
@@ -14,7 +14,7 @@ const App = () => {
                     <Switch>
                         <Route path="/" exact component={Home} />
                         <Route path="/about" exact component={About} />
-                        <Route path="/donation" exact component={Donor} />
+                        <Route path="/donation" exact component={Donation} />
                         <Route path="/contact" exact component={Contact} />
                     </Switch>
                 </Suspense>

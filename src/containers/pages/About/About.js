@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 
 import Heading from "../../../components/shared/Heading/Heading";
+import Paragraph from "../../../components/shared/Paragraph/Paragraph";
 import classes from "./About.module.scss";
 const About = (props) => {
     const items = useRef([
@@ -31,20 +32,18 @@ const About = (props) => {
                 />
             </figure>
             <Heading text="about us" />
-            <p className={classes.About__Paragraph}>
+            <Paragraph>
                 မင်းအောင်လှိုင်ဦးစီးသော စစ်တပ်သည် Feb 1 ရက်နေ့မှစ၍ အနိုင်ရပါတီ၏ အမတ်များနှင့်
                 နိုင်ငံတော်အကြီးအကဲများကို ဖမ်းဆီးထိန်းသိမ်းကာ နိုင်ငံတော်အာဏာကို
                 အတင်းအဓမ္မသိမ်းယူခဲ့သည်။ ထိုအချိန်မှစ၍ နိုင်ငံတစ်ဝှမ်း အစိုးရဝန်ထမ်းများသည် Civil
                 Disobedience Movement ဟုခေါ်သော အာဏာဖီဆန်ခြင်း လှုပ်ရှားမှု၌ ပါဝင်လာကြသည်။
                 ထိုကဲ့သို့ ပြည်သူ့ဘက်မှ ရပ်တည်သော ဝန်ထမ်းများကို တစ်ဖက်တစ်လှမ်းမှကူညီလျက်ရှိကြသည်။
-                MTUSU သည် MTU ရှိ CDM ပါဝင်သော ဝန်ထမ်းများကို ထောက်ပံ့ရန် MTU
-                CDM Support team အားဖွဲ့စည်းပြီး အလှူငွေများလက်ခံလျက်ရှိပါသည်။
-            </p>
+                MTUSU သည် MTU ရှိ CDM ပါဝင်သော ဝန်ထမ်းများကို ထောက်ပံ့ရန် MTU CDM Support team
+                အားဖွဲ့စည်းပြီး အလှူငွေများလက်ခံလျက်ရှိပါသည်။
+            </Paragraph>
 
             <Heading text="strategies" />
-            <p className={classes.About__Paragraph}>
-                MTU CDM Support Teamမှ လုပ်ဆောင်နေသည့် အစီအစဉ်များ
-            </p>
+            <Paragraph>MTU CDM Support Teamမှ လုပ်ဆောင်နေသည့် အစီအစဉ်များ</Paragraph>
             <div className={classes.About__List}>
                 {items.current.map((item, i) => (
                     <div className={classes.About__List__Item} key={i}>
@@ -52,7 +51,7 @@ const About = (props) => {
                             className={classes.About__List__Icon}
                             name={`${item.icon}-outline`}
                         ></ion-icon>
-                        <p className={classes.About__Paragraph}>{item.text}</p>
+                        <Paragraph>{item.text}</Paragraph>
                     </div>
                 ))}
             </div>

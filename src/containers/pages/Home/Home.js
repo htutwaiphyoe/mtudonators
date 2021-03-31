@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Heading from "../../../components/shared/Heading/Heading";
+import Paragraph from "../../../components/shared/Paragraph/Paragraph";
 import Chart from "../../../components/Chart/Chart";
 import classes from "./Home.module.scss";
 
@@ -78,18 +79,18 @@ const Home = (props) => {
         <section className={classes.Home}>
             <div className={classes.Home__Total}>
                 <p className={classes.Home__Total__Heading}>K15,769,162+</p>
-                <span className={classes.Home__Total__Label}>{`ရရှိထားပြီးဖြစ်သည်`}</span>
+                <Paragraph>{`ရရှိထားပြီးဖြစ်သည်`}</Paragraph>
             </div>
             <div className={classes.Home__Container}>
                 <div className={classes.Home__Box}>
                     <div className={classes.Home__Total}>
                         <Heading text="Total" />
                         <div className={classes.Home__Total__Amount}>{percentage}%</div>
-                        <span className={classes.Home__Total__Label}>{"ထောက်ပံ့ပြီးဖြစ်သည်"}</span>
+                        <Paragraph>{"ထောက်ပံ့ပြီးဖြစ်သည်"}</Paragraph>
                     </div>
                     <div>
                         <Chart {...charts.doughnut} />
-                        <p className={classes.Home__Total__Label}>{charts.doughnut.title}</p>
+                        <Paragraph>{charts.doughnut.title}</Paragraph>
                     </div>
                 </div>
             </div>
@@ -99,7 +100,7 @@ const Home = (props) => {
                     {charts.bar.map((c, i) => (
                         <div key={i}>
                             <Chart {...c} />
-                            <p className={classes.Home__Total__Label}>{c.title}</p>
+                            <Paragraph>{c.title}</Paragraph>
                         </div>
                     ))}
                 </div>

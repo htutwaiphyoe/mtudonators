@@ -1,9 +1,49 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 import icon from "../../../assets/imgs/contact.svg";
-import Heading from "../../../components/shared/Heading/Heading";
+import Paragraph from "../../../components/shared/Paragraph/Paragraph";
+import Form from "../../../components/shared/Form/Form";
 import classes from "./Contact.module.scss";
 const Contact = (props) => {
+    const media = useRef([
+        { url: "https://m.facebook.com/mtustudentunion", icon: "facebook" },
+        { url: "http://m.me/mtustudentunion", icon: "facebook-messenger" },
+    ]);
+
+    const contactForm = {
+        name: {
+            type: "input",
+            config: {
+                type: "text",
+                placeholder: "Name",
+                required: true,
+            },
+        },
+        email: {
+            type: "input",
+            config: {
+                type: "email",
+                placeholder: "Email",
+                required: true,
+            },
+        },
+        select: {
+            type: "select",
+            options: [
+                { value: "0", shownValue: "- Select -" },
+                { value: "1", shownValue: "Feedback" },
+                { value: "2", shownValue: "Be a part of us" },
+                { value: "3", shownValue: "Report bugs or errors" },
+            ],
+        },
+        message: {
+            type: "textarea",
+            config: {
+                required: true,
+                placeholder: "Message",
+            },
+        },
+    };
     useEffect(() => {
         document.title = "Contact | MTU CDM Support";
     }, []);
@@ -18,66 +58,28 @@ const Contact = (props) => {
                     />
                 </figure>
 
-                <p className={classes.Contact__Paragraph}>
+                <Paragraph>
                     CDM ထောက်ပံ့ရေးနှင့်ပတ်သတ်၍ အသေးစိတ်သိရှိလို၍ဖြစ်စေ၊ မေးမြန်းချင်လို၍ဖြစ်စေ MTU
                     CDM Support Team ထံသို့ အောက်ဖော်ပြပါနည်းလမ်းများနှင့် ဆက်သွယ်နိုင်ပါသည်။
-                </p>
+                </Paragraph>
                 <ul className={classes.Contact__List}>
-                    <li
-                        className={`${classes.Contact__List__Item} ${classes.Contact__List__Item_1}`}
-                    >
-                        <a
-                            href="https://m.facebook.com/mtustudentunion"
-                            className={` ${classes.Contact__List__Item_1}`}
-                        >
-                            <i className="fab fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li className={`${classes.Contact__List__Item} `}>
-                        <a
-                            href="http://m.me/mtustudentunion"
-                            className={` ${classes.Contact__List__Item_2}`}
-                        >
-                            <i className="fab fa-facebook-messenger"></i>
-                        </a>
-                    </li>
+                    {media.current.map((el, i) => (
+                        <li className={`${classes.Contact__List__Item}`} key={i}>
+                            <a
+                                href={el.url}
+                                className={`${classes[`Contact__List__Item_${i + 1}`]}`}
+                            >
+                                <i className={`fab fa-${el.icon}`}></i>
+                            </a>
+                        </li>
+                    ))}
                 </ul>
-                <p className={classes.Contact__Footer}>
+                <Paragraph>
                     Copyright &copy; 2021 | MTU Students' Union <br />
                     Terms & Conditions
-                </p>
+                </Paragraph>
             </div>
-            <form className={classes.Contact__Form}>
-                <Heading text="Get in touch with us" />
-                <input
-                    type="text"
-                    className={classes.Contact__Form__Input}
-                    required
-                    placeholder="Name"
-                />
-                <input
-                    type="email"
-                    className={classes.Contact__Form__Input}
-                    required
-                    placeholder="Email"
-                />
-                <select name="" id="" className={classes.Contact__Form__Input}>
-                    <option value=""> - Select - </option>
-                    <option value="">Feedback</option>
-                    <option value="">Be a part of us</option>
-                    <option value="">Report bugs or errors</option>
-                </select>
-                <textarea
-                    name=""
-                    id=""
-                    cols="30"
-                    rows="10"
-                    className={classes.Contact__Form__Input}
-                    required
-                    placeholder="Message"
-                ></textarea>
-                <button className={classes.Contact__Btn}>Send form</button>
-            </form>
+            <Form formData={contactForm} />
         </section>
     );
 };

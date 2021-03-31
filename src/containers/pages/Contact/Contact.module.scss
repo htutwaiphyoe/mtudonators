@@ -18,14 +18,10 @@
         flex-direction: column;
         padding: 3rem 0;
     }
-    &__Paragraph {
-        width: 30rem;
-        margin: 2rem 0 1rem;
-        font-size: 1.5rem;
-        color: $color-muted;
-    }
+
     &__ImageContainer {
-        width: 35rem;
+        width: 30rem;
+
         &__Image {
             width: 100%;
         }
@@ -45,62 +41,6 @@
             &_2 {
                 color: #0078ff;
             }
-        }
-    }
-    &__Footer {
-        font-size: 1.3rem;
-        color: $color-muted;
-        margin-top: 1rem;
-        text-align: center;
-    }
-
-    &__Form {
-        @include center;
-        flex-direction: column;
-        background-color: $color-white;
-        @include responsive(767, 0) {
-            padding-bottom: 12rem;
-        }
-        &__Input {
-            width: 85%;
-            max-width: 50rem;
-            padding: 1.5rem;
-            margin-top: 1.5rem;
-            outline: none;
-            border: 1px solid #ccc;
-            font-size: 1.6rem;
-            font-family: "Lato", "Helvetica Neue";
-
-            &:focus {
-                border: 1px solid $color-primary;
-            }
-        }
-    }
-    &__Btn {
-        text-decoration: none;
-        background-color: $color-primary;
-        color: $color-background;
-        padding: 1.3rem 2.5rem;
-        display: inline-block;
-        font-size: 1.6rem;
-        font-family: "Libre Franklin";
-        border-radius: 0.5rem;
-        -webkit-border-radius: 0.5rem;
-        -moz-border-radius: 0.5rem;
-        -ms-border-radius: 0.5rem;
-        -o-border-radius: 0.5rem;
-        box-shadow: $shadow;
-        margin-top: 2rem;
-        transition: all 0.2s ease;
-        -webkit-transition: all 0.2s ease;
-        -moz-transition: all 0.2s ease;
-        -ms-transition: all 0.2s ease;
-        -o-transition: all 0.2s ease;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        &:hover {
-            color: $color-primary-light;
         }
     }
 }

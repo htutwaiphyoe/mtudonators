@@ -61,10 +61,5 @@
             @include center;
             flex-direction: column;
         }
-        &__Label {
-            font-size: 1.4rem;
-            color: $color-muted;
-            text-align: center;
-        }
     }
 }

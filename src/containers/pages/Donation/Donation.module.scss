@@ -1,0 +1,49 @@
+@import "../../../sass/abstracts/mixins";
+@import "../../../sass/abstracts/variables";
+.Donation {
+    width: 100%;
+    @include center;
+    flex-direction: column;
+    padding: 1rem 2rem 2rem;
+    margin-bottom: 11rem;
+    @include fadeIn;
+
+    &__Container {
+        @include center;
+        flex-direction: column;
+    }
+
+    &__Services {
+        margin-top: 1rem;
+        display: grid;
+        gap: 2rem;
+        &_Pay {
+            grid-template-columns: repeat(3, 1fr);
+            @include responsive(767, 0) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @include responsive(479, 0) {
+                grid-template-columns: 1fr;
+            }
+        }
+        &_Bank {
+            grid-template-columns: repeat(4, 1fr);
+
+            @include responsive(767, 0) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @include responsive(479, 0) {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+    &__ImageContainer {
+        width: 15rem;
+
+        &__Image {
+            box-shadow: $shadow;
+            width: 100%;
+            @include rounded(100%);
+        }
+    }
+}
