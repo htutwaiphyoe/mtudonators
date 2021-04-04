@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import classes from "./Button.module.scss";
 
 const Button = (props) => {
@@ -20,12 +22,7 @@ const Button = (props) => {
         );
     }
     return (
-        <button
-            type="submit"
-            onClick={props.onClick}
-            className={classNames.join(" ")}
-            disabled={!props.valid}
-        >
+        <button onClick={props.onClick} className={classNames.join(" ")} disabled={!props.valid}>
             {props.children}
         </button>
     );
