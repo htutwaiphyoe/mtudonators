@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 import Paragraph from "../../../components/shared/Paragraph/Paragraph";
 import Button from "../../../components/shared/Button/Button";
@@ -6,33 +7,42 @@ import Box from "../../../components/shared/Box/Box";
 import * as donationData from "../../../api/donationData";
 import classes from "./Donation.module.scss";
 const Donation = (props) => {
+    const location = useLocation();
+
     useEffect(() => {
         document.title = "Donation | MTU CDM Support";
     }, []);
+
     return (
         <section className={classes.Donation}>
+            <Paragraph>လှူဒါန်းမှုများကို လစဉ်ထောက်ပံပေးလျက်ရှိပါသည်</Paragraph>
             <div className={classes.Donation__PhotoBox}>
-                <figure>
-                    <img
-                        className={classes.Donation__PhotoBox__Photo}
-                        src="https://scontent-hkt1-1.xx.fbcdn.net/v/t1.15752-9/167893409_462592904856308_4552469087483898646_n.png?_nc_cat=109&ccb=1-3&_nc_sid=ae9488&_nc_ohc=_4BVAWHYUUkAX_-N4nm&_nc_ht=scontent-hkt1-1.xx&oh=b996c06e9ea33a864b45c124f4e077e0&oe=608A3CE6"
-                        alt=""
-                    />
-                </figure>
-                <figure>
-                    <img
-                        className={classes.Donation__PhotoBox__Photo}
-                        src="https://scontent-hkt1-1.xx.fbcdn.net/v/t1.15752-9/156998617_439274337401396_8153648209118197410_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=ae9488&_nc_ohc=0KrP9YnDuNYAX9zbu6m&_nc_ht=scontent-hkt1-1.xx&oh=5da872dcbca35f9f818eced17fdd0056&oe=608B1F44"
-                        alt=""
-                    />
-                </figure>
-                <figure>
-                    <img
-                        className={classes.Donation__PhotoBox__Photo}
-                        src="https://scontent-hkt1-1.xx.fbcdn.net/v/t1.15752-9/158396297_904124143751655_8414086983580476142_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=ae9488&_nc_ohc=vfl4c5nfgJIAX-EZZOk&_nc_oc=AQn4plSBZqqhSVa2db_6qTRPTCJjFhx2AwCqs0LFZNxQa_fvQ-hvCdDVxZi0s3wtxmw&_nc_ht=scontent-hkt1-1.xx&oh=4b5503c9493e3189920785c24913577c&oe=608AE8AC"
-                        alt=""
-                    />
-                </figure>
+                <div className={classes.Donation__Card}>
+                    <figure>
+                        <img
+                            className={classes.Donation__PhotoBox__Photo}
+                            src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-0/s640x640/164728492_2505865269710314_8984117300093244580_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=0debeb&_nc_ohc=Nt_LEGJNur8AX_KqxFq&_nc_ht=scontent-sin6-2.xx&tp=7&oh=5cfa162566c5e40497b2e6de115d90c2&oe=6092E009"
+                            alt=""
+                        />
+                    </figure>
+                    <Paragraph>February လအတွက် ထောက်ပံ့မှုများ</Paragraph>
+                    <Button link={true} url={`${location.pathname}/february`}>
+                        Read detail
+                    </Button>
+                </div>
+                <div className={classes.Donation__Card}>
+                    <figure>
+                        <img
+                            className={classes.Donation__PhotoBox__Photo}
+                            src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-9/167400206_2513465945616913_8531590648993454432_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=0debeb&_nc_ohc=9pSmOHlq4BIAX8x6iZ-&_nc_ht=scontent-sin6-2.xx&oh=0494e3bca1748adeef27188dd9a2c073&oe=6093A3DE"
+                            alt=""
+                        />
+                    </figure>
+                    <Paragraph>March လအတွက် ထောက်ပံ့မှုများ</Paragraph>
+                    <Button link={true} url={`${location.pathname}/march`}>
+                        Read detail
+                    </Button>
+                </div>
             </div>
             <Box vertical>
                 <Paragraph>

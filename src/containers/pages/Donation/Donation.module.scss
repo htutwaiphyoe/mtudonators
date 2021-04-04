@@ -10,32 +10,56 @@
 
     @include fadeIn;
     &__PhotoBox {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        justify-content: center;
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
         @include responsive(991, 0) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        @include responsive(575, 0) {
+            flex-direction: column;
+            align-items: center;
             padding: 0 1rem;
-            gap: 1rem;
-            grid-template-columns: repeat(1, 1fr);
         }
-        padding: 0 2rem;
+        // @include responsive(575, 0) {
+        //     padding: 0 1rem;
+        //     gap: 1rem;
+        //     grid-template-columns: repeat(1, 1fr);
+        // }
+        padding: 1rem 2rem 0;
         gap: 2rem;
         width: 100%;
         margin: 0 auto;
+
         & figure {
             width: 100%;
-            height: 100%;
+            height: 70%;
+            max-height: 30rem;
+
+            overflow: hidden;
+            // height: 100%;
             // background-color: $color-black;
         }
         &__Photo {
             width: 100%;
             // opacity: 0.8;
-            height: 100%;
-            filter: grayscale(80%);
-            -webkit-filter: grayscale(80%);
+            object-fit: cover;
+            // height: 100%;
+            // filter: grayscale(80%);
+            // -webkit-filter: grayscale(80%);
         }
+    }
+
+    &__Card {
+        width: 100%;
+        max-width: 40rem;
+
+        display: flex;
+        padding-bottom: 1rem;
+        align-items: center;
+        flex-direction: column;
+        @include rounded(2rem); //max-width: 30rem;
+        box-shadow: $shadow;
+        overflow: hidden;
+        background-color: $color-white;
     }
     &__Container {
         @include center;
