@@ -23,12 +23,12 @@ const Home = (props) => {
         };
     }, [percentage]);
     useEffect(() => {
-        document.title = "Home | MTU CDM Support";
+        document.title = "Donation | CDM Support Team - MTU";
     }, []);
     return (
         <section className={classes.Home}>
             <div className={classes.Home__Total}>
-                <p className={classes.Home__Total__Heading}>K33,004,162+</p>
+                <p className={classes.Home__Total__Heading}>K33,024,162+</p>
                 <Paragraph>{`ရရှိထားပြီးဖြစ်သည်`}</Paragraph>
             </div>
             <div className={classes.Home__Container}>

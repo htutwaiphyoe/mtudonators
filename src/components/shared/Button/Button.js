@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import classes from "./Button.module.scss";
 
 const Button = (props) => {

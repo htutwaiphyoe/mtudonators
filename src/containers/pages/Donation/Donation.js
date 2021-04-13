@@ -8,7 +8,7 @@ import * as donationData from "../../../api/donationData";
 import classes from "./Donation.module.scss";
 const Donation = (props) => {
     useEffect(() => {
-        document.title = "Donation | MTU CDM Support";
+        document.title = "CDM Support Team - MTU";
     }, []);
 
     return (

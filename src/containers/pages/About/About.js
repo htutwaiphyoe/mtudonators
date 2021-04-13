@@ -7,7 +7,7 @@ import * as aboutData from "../../../api/aboutData";
 import classes from "./About.module.scss";
 const About = (props) => {
     useEffect(() => {
-        document.title = "About | MTU CDM Support";
+        document.title = "About | CDM Support Team - MTU";
     }, []);
     return (
         <section className={classes.About}>

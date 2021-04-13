@@ -116,7 +116,7 @@ const Contact = (props) => {
         setContactForm(newContactForm);
     };
     useEffect(() => {
-        document.title = "Contact | MTU CDM Support";
+        document.title = "Contact | CDM Support Team - MTU";
     }, []);
     return (
         <section className={classes.Contact}>
