@@ -28,9 +28,6 @@ const Donation = (props) => {
                         </figure>
                         <Paragraph>{c.month} လအတွက် ထောက်ပံ့မှုများ</Paragraph>
                         <Paragraph>{c.description}</Paragraph>
-                        {/* <Button valid={true} onClick={(e) => onButtonClick(e, c.month)}>
-                            Read detail
-                        </Button> */}
                     </div>
                 ))}
             </div>
@@ -41,7 +38,6 @@ const Donation = (props) => {
                 </Paragraph>
                 <Button link={true} url="http://m.me/mtustudentunion">
                     Support Now
-                    {/* <i className="fas fa-arrow-right" style={{ marginLeft: ".8rem" }}></i> */}
                 </Button>
             </Box>
             <Paragraph>
