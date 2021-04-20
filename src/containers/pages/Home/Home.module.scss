@@ -33,6 +33,7 @@
             line-height: 1;
             font-weight: 700;
             font-family: "Libre Franklin", sans-serif;
+
             @include responsive(575, 0) {
                 font-size: 11rem;
             }
