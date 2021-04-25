@@ -7,7 +7,7 @@ export const services = {
         },
         {
             src:
-                "https://scontent.xx.fbcdn.net/v/t1.0-9/87948624_2927481817295123_7349089789674520576_o.jpg?_nc_cat=104&ccb=1-3&_nc_sid=730e14&_nc_ohc=fCMUMOtnHkcAX9wwtOQ&_nc_oc=AQkvHUfiomvy18sODP4gSiDY4A0mG51pKFAkOWo3TwMTvIM1WI7Y_QajS_ABvzsG82M495XQtdZOefABeVAm7ShI&_nc_ht=scontent.xx&oh=cc0c09f49cac82172c7a3d33dce3a362&oe=60853ADA",
+                "https://scontent.xx.fbcdn.net/v/t1.6435-9/109581188_3290573927652575_5257646232074896026_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=730e14&_nc_ohc=H2ur7NuzICMAX-CTxyD&_nc_ht=scontent.xx&oh=f8179239edab7dc4c9846a77ad8f44d3&oe=60AA2E3C",
             caption: "CB Pay",
         },
         {
@@ -34,7 +34,7 @@ export const services = {
         },
         {
             src:
-                "https://scontent.xx.fbcdn.net/v/t1.0-9/120262374_3285765488172402_8697007081101066614_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=5ADRc7Zd_xIAX_RtChB&_nc_ht=scontent.xx&oh=1a73fc41ce72e281b478eac1fde44907&oe=6085F55E",
+                "https://scontent.xx.fbcdn.net/v/t1.6435-9/120262374_3285765488172402_8697007081101066614_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=Tw3fWEZSrKYAX8hhAKW&_nc_ht=scontent.xx&oh=cf35352cf67d05f341bc9f3d94116d0c&oe=60ADD4BF",
             caption: "AYA Bank",
         },
     ],

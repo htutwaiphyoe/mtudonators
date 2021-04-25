@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 
 import Paragraph from "../../../components/shared/Paragraph/Paragraph";
-import Heading from "../../../components/shared/Heading/Heading";
 import Button from "../../../components/shared/Button/Button";
 import Box from "../../../components/shared/Box/Box";
 import * as donationData from "../../../api/donationData";
@@ -13,7 +12,6 @@ const Donation = (props) => {
 
     return (
         <section className={classes.Donation}>
-            <Heading text="Supports" />
             <Paragraph>လှူဒါန်းမှုများကို CDMဝန်ထမ်းများထံ လစဉ်ထောက်ပံ့ပေးလျက်ရှိပါသည်။</Paragraph>
             <div className={classes.Donation__PhotoBox}>
                 {donationData.cards.map((c, i) => (
